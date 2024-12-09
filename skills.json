@@ -1,0 +1,98 @@
+[
+    {
+        "name": "HTML",
+        "icon": "https://img.icons8.com/fluency/48/000000/html-5.png"
+    },
+    {
+        "name": "CSS",
+        "icon": "https://img.icons8.com/fluency/48/000000/css3.png"
+    },
+    {
+        "name": "Bootstrap",
+        "icon": "https://img.icons8.com/fluency/48/000000/bootstrap.png"
+    },
+    {
+        "name": "Power BI",
+        "icon": "https://1000logos.net/wp-content/uploads/2022/12/Power-BI-Logo.png"
+    },
+    {
+        "name": ".NET",
+        "icon": "https://upload.wikimedia.org/wikipedia/commons/7/7d/Microsoft_.NET_logo.svg"
+    },
+    {
+        "name": "GitHub",
+        "icon": "https://img.icons8.com/glyph-neue/48/ffffff/github.png"
+    },
+    {
+        "name": "C#",
+        "icon": "https://miro.medium.com/v2/resize:fit:828/format:webp/0*muNHqR0MMu2CjRbv.png"
+    },
+    {
+        "name": "SQL",
+        "icon": "https://icons-for-free.com/iff/png/512/development+logo+mysql+icon-1320184807686758112.png"
+    },
+    {
+        "name": "SQL Server",
+        "icon": "https://banner2.cleanpng.com/20180805/hrv/944cc360a38fc374080fd83c314abf8f.webp"
+    },
+    {
+        "name": "MongoDB",
+        "icon": "https://cdn.worldvectorlogo.com/logos/mongodb-icon-2.svg"
+    },
+    {
+        "name": "GraphQL",
+        "icon": "https://img.icons8.com/fluency/48/000000/graphql.png"
+    },
+    {
+        "name": "Node.js",
+        "icon": "https://img.icons8.com/fluency/48/000000/node-js.png"
+    },
+    {
+        "name": "Material UI",
+        "icon": "https://img.icons8.com/color/48/000000/material-ui.png"
+    },
+    {
+        "name": "JavaScript",
+        "icon": "https://img.icons8.com/fluency/48/000000/javascript.png"
+    },
+    {
+        "name": "Python",
+        "icon": "https://img.icons8.com/fluency/48/000000/python.png"
+    },
+    {
+        "name": "Jira",
+        "icon": "https://static-00.iconduck.com/assets.00/jira-icon-1024x1024-96tmi3hq.png"
+    },
+    {
+        "name": "Git",
+        "icon": "https://cdn.iconscout.com/icon/free/png-512/free-git-logo-icon-download-in-svg-png-gif-file-formats--brand-development-tools-pack-logos-icons-225996.png?f=webp&w=256"
+    },
+    {
+        "name": "Bitbucket",
+        "icon": "https://banner2.cleanpng.com/20180823/wvi/kisspng-bitbucket-computer-software-github-clip-art-git-browser-1713950687319.webp"
+    },
+    {
+        "name": "WPF",
+        "icon": "https://as1.ftcdn.net/v2/jpg/04/86/27/22/1000_F_486272207_PZA0m6es437qmO4r7NQ3LGSfLf3p6uV9.jpg"
+    },
+    {
+        "name": "Redis",
+        "icon": "https://img.icons8.com/fluency/48/000000/redis.png"
+    },
+    {
+        "name": "React",
+        "icon": "https://img.icons8.com/external-tal-revivo-color-tal-revivo/48/000000/external-react-a-javascript-library-for-building-user-interfaces-logo-color-tal-revivo.png"
+    },
+    {
+        "name": "NodeJS",
+        "icon": "https://img.icons8.com/color/48/000000/nodejs.png"
+    },
+    {
+        "name": "Android",
+        "icon": "https://img.icons8.com/fluency/48/000000/android-os.png"
+    },	
+    {
+        "name": "Java",
+        "icon": "https://img.icons8.com/color/48/000000/java-coffee-cup-logo--v1.png"
+    }
+]
