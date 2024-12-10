@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,34 +10,56 @@
   <style>
     .card {
       padding: 10px;
-      border: 1px solid #2b1f5c; /* Blue border */
-      border-radius: 20px; /* Rounded corners */
-      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+      border: 1px solid #2b1f5c;
+      border-radius: 20px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
       transition: transform 0.2s, box-shadow 0.2s;
+    }
 
-    }
     .card:hover {
-      transform: scale(1.02); /* Slightly larger on hover */
-      box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Enhanced shadow on hover */
+      transform: scale(1.02);
+      box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
     }
+
     .card img {
       height: 200px;
       object-fit: cover;
-      border-bottom: 3px solid #000103; /* Bottom border for image */
+      border-bottom: 3px solid #000103;
     }
-   
+
+    .modal-dialog {
+      max-width: 100%;
+      margin: 0;
+    }
+
+    .modal-content {
+      height: 100vh;
+    }
+
+    iframe {
+      height: calc(100% - 56px);
+      width: 100%;
+      border: none;
+    }
+
+    .modal-header {
+      height: 56px;
+    }
   </style>
 </head>
+
 <body>
   <div class="container my-2">
     <div class="row g-4">
       <!-- Card 1 -->
       <div class="col-md-4 col-sm-6">
         <div class="card h-100">
-          <img src="../assets/images/suggi1.png" class="card-img-top" alt="Excel Sales Insight Project">
+          <img src="../assets/images/suggi1.png" class="card-img-top" alt="POS Application">
           <div class="card-body">
             <h5 class="card-title">Point of Sale (POS) Application</h5>
-            <p class="card-text">It is a comprehensive and user-friendly system which It supports inventory tracking, sales reporting, and customer management, enabling businesses to enhance their operational efficiency.<p>
+            <p class="card-text">A comprehensive and user-friendly system supporting inventory tracking, sales
+              reporting,
+              and customer management.</p>
             <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#excelModal">See My Work</button>
           </div>
         </div>
@@ -44,10 +67,11 @@
       <!-- Card 2 -->
       <div class="col-md-4 col-sm-6">
         <div class="card h-100">
-          <img src="../assets/images/health.jpeg" class="card-img-top" alt="Business Insights 360 Dashboard">
+          <img src="../assets/images/health.jpeg" class="card-img-top" alt="Healthcare Website Security">
           <div class="card-body">
             <h5 class="card-title">IDOR Implementation on Healthcare Website</h5>
-            <p class="card-text">Implemented IDOR security measures across a healthcare website to protect sensitive user data and maintain compliance with security standards.</p>
+            <p class="card-text">Implemented IDOR security measures across a healthcare website to protect sensitive
+              user data.</p>
             <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#businessModal">See My Work</button>
           </div>
         </div>
@@ -55,10 +79,11 @@
       <!-- Card 3 -->
       <div class="col-md-4 col-sm-6">
         <div class="card h-100">
-          <img src="../assets/images/suggi.png" class="card-img-top" alt="Top Happiest Countries">
+          <img src="../assets/images/suggi.png" class="card-img-top" alt="BI Tool">
           <div class="card-body">
             <h5 class="card-title">Advanced Analytical Tool (BI)</h5>
-            <p class="card-text">it is an interactive and customizable analytical tool designed to provide real-time insights through dynamic visualizations which helps to take business decisions</p>
+            <p class="card-text">An interactive analytical tool providing real-time insights through dynamic
+              visualizations.</p>
             <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#happinessModal">See My Work</button>
           </div>
         </div>
@@ -67,8 +92,9 @@
   </div>
 
   <!-- Modals -->
+  <!-- Modal 1 -->
   <div class="modal fade" id="excelModal" tabindex="-1" aria-labelledby="excelModalLabel" aria-hidden="true">
-    <div class="modal-dialog">
+    <div class="modal-dialog modal-lg">
       <div class="modal-content">
         <div class="modal-header">
           <h5 class="modal-title" id="excelModalLabel">Point of Sale (POS) Application</h5>
@@ -81,6 +107,7 @@
     </div>
   </div>
 
+  <!-- Modal 2 -->
   <div class="modal fade" id="businessModal" tabindex="-1" aria-labelledby="businessModalLabel" aria-hidden="true">
     <div class="modal-dialog">
       <div class="modal-content">
@@ -95,16 +122,15 @@
     </div>
   </div>
 
+  <!-- Modal 3 -->
   <div class="modal fade" id="happinessModal" tabindex="-1" aria-labelledby="happinessModalLabel" aria-hidden="true">
     <div class="modal-dialog">
       <div class="modal-content">
         <div class="modal-header">
-          <h5 class="modal-title" id="happinessModalLabel">Advanced Analytical Tool (BI)</h5>
+          <h5 class="modal-title" id="excelModalLabel">Advanced Analytical Tool (BI)</h5>
           <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
         </div>
-        <div class="modal-body">
-          Currently Unavailable
-        </div>
+        <iframe id="contentFrame" src="./dialog3.html"></iframe>
       </div>
     </div>
   </div>
@@ -112,4 +138,5 @@
   <!-- Bootstrap JS -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
+
 </html>
