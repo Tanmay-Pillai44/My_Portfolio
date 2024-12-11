@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Project Overview</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        .custom-container {
+            background-color: #089251;
+            color: white;
+            padding: 30px;
+            border-radius: 35px;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        .custom-container img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 20px;
+        }
+
+        .custom-container2 {
+            background-color: #252460;
+            color: white;
+            border-radius: 35px;
+            padding: 20px;
+            margin-top: 20px;
+        }
+
+        .custom-container2 img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 20px;
+        }
+
+        .custom-container1 {
+            padding: 20px 10px;
+        }
+
+        .section {
+            margin-bottom: 40px;
+        }
+
+        .title {
+            font-size: 1.5rem;
+            font-weight: bold;
+            margin-bottom: 15px;
+        }
+
+        .content {
+            font-size: 1.1rem;
+            color: #666;
+        }
+
+        .buttons {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            margin-top: 30px;
+        }
+
+        .button {
+            background-color: #2a1a72;
+            color: white;
+            padding: 10px 30px;
+            border: none;
+            border-radius: 30px;
+            font-size: 1rem;
+            text-transform: uppercase;
+            cursor: pointer;
+        }
+
+        .img1,
+        .img2 {
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        .img1 img,
+        .img2 img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 20px;
+        }
+
+        @media (max-width: 768px) {
+
+            .custom-container,
+            .custom-container2 {
+                padding: 20px;
+            }
+
+            .custom-container1 .section .title {
+                font-size: 1.2rem;
+            }
+
+            .content {
+                font-size: 1rem;
+            }
+
+            .buttons {
+                flex-direction: column;
+                gap: 10px;
+            }
+
+            .button {
+                font-size: 0.9rem;
+                padding: 10px 20px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container-fluid mt-5">
+        <!-- Header Image -->
+        <div class="custom-container">
+            <img src="../assets/images/dashboard/idor.jpg" alt="Dashboard Image">
+        </div>
+
+        <!-- Project Details -->
+        <div class="custom-container1">
+            <div class="section">
+                <div class="title">Project</div>
+                <p class="content">
+                    IDOR (Insecure Direct Object References) is a type of security vulnerability that occurs when an
+                    application exposes references to internal objects (such as files, database records, or user data)
+                    without properly validating whether the user is authorized to access them. In simpler terms, IDOR
+                    vulnerabilities arise when a user is able to access or manipulate resources (objects) that they
+                    shouldn’t be able to by modifying an identifier in a request (e.g., a URL, form field, or API
+                    parameter).
+                </p>
+                <p class="content">
+                    IDOR implementation involves protecting against this vulnerability by enforcing strict access
+                    control measures and ensuring that users can only access the data they are authorized to interact
+                    with. This is done through various techniques and strategies like authorization checks, dynamic
+                    resource validation, and proper error handling.
+                </p>
+            </div>
+        </div>
+
+        <!-- Additional Images -->
+        <div class="row mt-4">
+            <div class="col-md-6 img1">
+                <img src="../assets/images/dashboard/idor2.png" alt="Dashboard Page 3">
+            </div>
+            <div class="col-md-6 img2 mt-3">
+                <p>
+                    Protection of Sensitive Data: IDOR vulnerabilities can allow unauthorized users to access sensitive information (like private account details, health records, or financial data). For example, in a healthcare application, IDOR vulnerabilities could let attackers access private medical records of patients.Protecting against IDOR ensures that users can only access data meant for them,               safeguarding privacy and compliance with regulations like GDPR and HIPAA.
+                </p>
+                <p>
+                    Preventing Unauthorized Actions: If an attacker can modify an identifier to access another user's data, they may also be able to modify that data. For example, they could delete, update, or create new records. In an e-commerce application, this could allow an attacker to change order details or payment information, resulting in fraud or malicious actions. IDOR protection ensures that users can only perform actions on objects that they are authorized to interact with.
+                </p>
+                <p>
+                    Securing APIs: Many modern applications rely on APIs to communicate between the frontend and backend. APIs often accept object identifiers in the form of parameters. Without proper validation, attackers can manipulate these parameters to access unauthorized resources, leading to data breaches. Protecting APIs from IDOR is critical to ensure that only authorized users can interact with them.
+                </p>
+                <p>
+                    Maintaining User Trust: Users trust applications with their sensitive data, and any breach or unauthorized access undermines this trust. By implementing IDOR protection, developers demonstrate their commitment to security, which is crucial for retaining users and maintaining a positive reputation.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
