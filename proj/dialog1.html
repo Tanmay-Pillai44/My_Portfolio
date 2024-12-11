@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Project Overview</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        .custom-container {
+            background-color: #262573;
+            color: white;
+            padding: 30px;
+            border-radius: 35px;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        .custom-container img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 20px;
+        }
+
+        .custom-container2 {
+            background-color: #252460;
+            color: white;
+            border-radius: 35px;
+            padding: 20px;
+            margin-top: 20px;
+        }
+
+        .custom-container2 img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 20px;
+        }
+
+        .custom-container1 {
+            padding: 20px 10px;
+        }
+
+        .section {
+            margin-bottom: 40px;
+        }
+
+        .title {
+            font-size: 1.5rem;
+            font-weight: bold;
+            margin-bottom: 15px;
+        }
+
+        .content {
+            font-size: 1.1rem;
+            color: #666;
+        }
+
+        .buttons {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            margin-top: 30px;
+        }
+
+        .button {
+            background-color: #2a1a72;
+            color: white;
+            padding: 10px 30px;
+            border: none;
+            border-radius: 30px;
+            font-size: 1rem;
+            text-transform: uppercase;
+            cursor: pointer;
+        }
+
+        .img1,
+        .img2 {
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        .img1 img,
+        .img2 img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 20px;
+        }
+
+        @media (max-width: 768px) {
+            .custom-container,
+            .custom-container2 {
+                padding: 20px;
+            }
+
+            .custom-container1 .section .title {
+                font-size: 1.2rem;
+            }
+
+            .content {
+                font-size: 1rem;
+            }
+
+            .buttons {
+                flex-direction: column;
+                gap: 10px;
+            }
+
+            .button {
+                font-size: 0.9rem;
+                padding: 10px 20px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container-fluid mt-5">
+        <!-- Header Image -->
+        <div class="custom-container">
+            <img src="../assets/images/dashboard/pos3.png" alt="Dashboard Image">
+        </div>
+
+        <!-- Project Details -->
+        <div class="custom-container1">
+            <div class="section">
+                <div class="title">Project</div>
+                <p class="content">
+                    The Suggi POS system is a robust, scalable application designed to manage the sale and purchase of farming essentials such as fertilizers, pesticides, tools, and implements. It is deployed in over 100 agricultural stores across India, enabling seamless inventory tracking, billing, and customer management. The system streamlines business operations by integrating user-friendly interfaces, real-time data processing, and secure transactions.
+                </p>
+            </div>
+            <div class="section">
+                <div class="title">Key Features</div>
+                <p class="content">
+                    The POS application features an advanced Inventory Management system that provides real-time tracking of stock levels and sends automatic alerts for low inventory, ensuring seamless restocking and availability of products. Its efficient Billing System streamlines invoice generation and customer payment tracking, reducing transaction time and errors. The application supports a Multi-User System with role-based access controls, allowing distinct roles such as admin, cashier, and manager to perform their specific tasks securely. Additionally, it includes comprehensive Reports and Analytics, offering detailed sales reports and data visualizations to facilitate informed decision-making. To ensure the highest level of Data Security, the application incorporates encryption for sensitive data, safeguarding privacy and maintaining trust.
+                </p>
+            </div>
+            
+        </div>
+
+        <!-- Additional Images -->
+        <div class="row mt-4">
+            <div class="col-md-6 img1">
+                <img src="../assets/images/dashboard/pos1.png" alt="Dashboard Page 3">
+            </div>
+            <div class="col-md-6 img2">
+                <img src="../assets/images/dashboard/pos2.png" alt="Dashboard Page 4">
+            </div>
+        </div>
+        <div class="section">
+            <div class="title">Challenge</div>
+            <p class="content">
+                Developing a POS application involves several challenges, such as ensuring scalability for increased transactions and users, integrating with legacy systems, and maintaining real-time data synchronization across stores. User adoption can be difficult in stores with limited technical skills, requiring easy-to-use interfaces and training. Offline functionality is important in areas with poor internet. Ensuring data security and privacy, integrating multiple payment gateways, and customizing the system for local needs like perishable goods can also be complex. Finally, staying compliant with local regulations adds another layer of difficulty. Addressing these is essential for building a successful POS system.
+            </p>
+        </div>
+        <!-- Second Image Section -->
+        <div class="custom-container2">
+            <img src="../assets/images/dashboard/pos4.png" alt="Director Dashboard">
+        </div>
+    </div>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
