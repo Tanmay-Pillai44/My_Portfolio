@@ -86,15 +86,34 @@ section {
 .heading span {
   color: rgb(115, 3, 167);
 }
+
 header .logo {
-  font-size: 1.9rem;
-  font-weight: 800;
-  text-decoration: none;
+  display: flex;
+  align-items: center;
+  font-size: 2rem;
+  font-weight: bold;
   color: #0e2431;
+  text-decoration: none;
+  height: 100%; /* Ensure it aligns properly */
+  transition: all 0.3s ease-in-out; /* Smooth transition for hover effect */
 }
-header .logo i {
-  font-size: 2.2rem;
+
+header .logo-icon {
+  width: 40px;
+  height: 40px;
+  margin-right: 10px;
+  transition: transform 0.3s ease-in-out; /* Smooth hover animation for icon */
 }
+
+header .logo:hover {
+  color: #fc8c05; /* Change text color on hover */
+  transform: scale(1.05); /* Slightly scale the logo container */
+}
+
+header .logo:hover .logo-icon {
+  transform: rotate(360deg); /* Rotate the icon on hover */
+}
+
 header .logo:hover {
   color: #fc8c05;
 }
@@ -390,11 +409,16 @@ header .navbar ul li a:hover {
   margin-top: 1rem;
 }
 .about .row .content p {
-  font-size: 1.5rem;
-  margin-top: 1.5rem;
-  font-family: "Nunito";
-  font-weight: 600;
-  text-transform: none;
+  font-size: 1.8rem; /* Larger, readable font size */
+  line-height: 2.5rem; /* Increased line height for better readability */
+  color: #4a4a4a; /* Softer color for the text */
+  text-align: justify; /* Justify text for clean alignment */
+  margin-top: 1rem; /* Add spacing above the paragraph */
+  font-family: "Nunito", sans-serif; /* Use a modern font for better appearance */
+}
+.about .row .content p span {
+  color: #011aff; /* Highlight specific text with a pop of color */
+  font-weight: bold; /* Bold for emphasis */
 }
 .about .row .content .box-container {
   display: flex;
@@ -637,6 +661,49 @@ header .navbar ul li a:hover {
     margin-left: 1rem;
     margin-right: 1rem;
     flex-wrap: wrap;
+  }
+}
+
+.education-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 20px;
+}
+
+.education-left {
+  flex: 2;
+}
+
+.resume-right {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #E4ECFB;
+  /* border-radius: 10px; */
+  /* padding: 20px; */
+  /* box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1); */
+}
+
+#myCanvasContainer {
+  position: relative;
+  width: 100%;
+  height: auto;
+}
+
+#myCanvas {
+  display: block;
+  margin: auto;
+}
+
+@media (max-width: 768px) {
+  .education-container {
+    flex-direction: column;
+  }
+
+  .resume-right {
+    margin-top: 20px;
   }
 }
 /* education media queries ends*/
@@ -1231,3 +1298,81 @@ form .button-area {
   top: calc(100% - 12rem);
 }
 /* scroll top ends */
+
+.portfolio-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 30px; /* Increase gap between projects */
+}
+
+.portfolio-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  gap: 30px; /* Increase gap between projects */
+}
+
+.portfolio-list a {
+  flex: 1 1 calc(30% - 30px); /* Adjust for larger images */
+  max-width: 30%; /* Larger max-width */
+  position: relative;
+  overflow: hidden;
+  text-align: center;
+}
+
+.portfolio-list a img {
+  width: 100%;
+  height: auto;
+  border-radius: 15px; /* Slightly larger border radius */
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.2); /* Enhance shadow */
+  transition: all 0.3s ease-in-out;
+}
+
+.portfolio-list a:hover img {
+  transform: scale(1.1); /* Slightly more zoom on hover */
+  opacity: 0.9;
+}
+
+.view-project {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0);
+  background-color: rgba(0, 0, 0, 0.7);
+  color: #fff;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  text-align: center;
+  font-size: 0.9rem;
+  line-height: 100px;
+  transition: all 0.3s ease-in-out;
+}
+
+.portfolio-list a:hover .view-project {
+  transform: translate(-50%, -50%) scale(1);
+}
+
+/* Responsive Design */
+@media screen and (max-width: 1024px) {
+  .portfolio-list a {
+    flex: 1 1 calc(45% - 30px); /* Adjust for smaller screens */
+    max-width: 45%; /* Larger images on medium screens */
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .portfolio-list a {
+    flex: 1 1 calc(48% - 30px); /* Two items per row */
+    max-width: 48%;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .portfolio-list a {
+    flex: 1 1 calc(100% - 30px); /* Full width for small screens */
+    max-width: 100%;
+  }
+}

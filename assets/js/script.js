@@ -39,8 +39,8 @@ $(document).ready(function () {
 
     // <!-- emailjs to mail contact form data -->
     $("#contact-form").submit(function (event) {
-        emailjs.init("b2p-tCNx7SLIXsXK4");
-        emailjs.sendForm('service_tymdb1d', 'template_b8532vw', '#contact-form')
+        emailjs.init("rz0yZ0Xb3uqGfPzpH");
+        emailjs.sendForm('service_s0nsdgj', 'template_e9b3tpy', '#contact-form')
             .then(function (response) {
                 console.log('SUCCESS!', response.status, response.text);
                 document.getElementById("contact-form").reset();
@@ -59,7 +59,7 @@ $(document).ready(function () {
 document.addEventListener('visibilitychange',
     function () {
         if (document.visibilityState === "visible") {
-            document.title = "Portfolio | Hitesh Patodia";
+            document.title = "Portfolio | Tanmay Pillai";
             $("#favicon").attr("href", "assets/images/favicon.png");
         }
         else {
@@ -71,21 +71,22 @@ document.addEventListener('visibilitychange',
     function validatePhone() {
         const phoneInput = document.getElementById("phone");
         const error = document.getElementById("phone-error");
-        
-        // Regular expression to validate phone number (e.g., 10 digits)
-        const phoneRegex = /^[0-9]{10}$/;
+    
+        // Regular expression to validate international phone numbers in E.164 format
+        const phoneRegex = /^\+?[1-9]\d{1,14}$/; // Allows +, followed by 1 to 15 digits
     
         if (!phoneRegex.test(phoneInput.value)) {
-          error.style.display = "block"; // Show error message
-          phoneInput.style.borderColor = "red"; // Add a red border to the input field
+            error.style.display = "block"; // Show error message
+            phoneInput.style.borderColor = "red"; // Add a red border to the input field
+            error.textContent = "Please enter a valid international phone number (e.g., +1234567890).";
         } else {
-          error.style.display = "none"; // Hide error message
-          phoneInput.style.borderColor = "green"; // Add a green border to indicate valid input
+            error.style.display = "none"; // Hide error message
+            phoneInput.style.borderColor = "green"; // Add a green border to indicate valid input
         }
-      }
+    }
 // <!-- typed js effect starts -->
 var typed = new Typed(".typing-text", {
-    strings: ["frontend development", "backend development", "web development","android development","bussiness intelligence"],
+    strings: ["frontend development", "backend development", "web development","system design","business intelligence"],
     loop: true,
     typeSpeed: 50,
     backSpeed: 25,
@@ -264,3 +265,17 @@ srtop.reveal('.experience .timeline .container', { interval: 400 });
 /* SCROLL CONTACT */
 srtop.reveal('.contact .container', { delay: 400 });
 srtop.reveal('.contact .container .form-group', { delay: 400 });
+
+$(document).ready(function () {
+    if (!$("#myCanvas").tagcanvas({
+      textColour: "#7303A7",
+      outlineColour: "transparent",
+      reverse: true,
+      depth: 0.8,
+      maxSpeed: 0.05,
+      weight: true,
+    }, "tags")) {
+      // Hide the canvas container if something goes wrong
+      $("#myCanvasContainer").hide();
+    }
+  });
